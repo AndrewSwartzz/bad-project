@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjgwrhma3y0bc"]
+
+[ext_resource type="PackedScene" uid="uid://cftsqngl8o60v" path="res://scene2.tscn" id="1_h1qgm"]
+[ext_resource type="PackedScene" uid="uid://d1imrp7w0wf0h" path="res://scene1.tscn" id="2_3n8p1"]
+
+[node name="game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_h1qgm")]
+position = Vector2(156, 165)
+
+[node name="Node2D" parent="." instance=ExtResource("2_3n8p1")]
+position = Vector2(671, 269)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Bugs Collected: 0 bugs"
